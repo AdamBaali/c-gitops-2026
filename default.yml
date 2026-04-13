@@ -15,6 +15,11 @@ org_settings:
   host_expiry_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://webhook.site/#!/view/bcd50076-6806-4b9d-8d13-21e197c5c496
+      host_batch_size: 0
   fleet_desktop:
     transparency_url: https://catoftheday.com
   org_info:
@@ -141,10 +146,3 @@ controls:
 ###########################################################
 labels:
   - paths: ./labels/*.yml
-  
-  webhook_settings:
-    failing_policies_webhook:
-      enable_failing_policies_webhook: true
-      destination_url: https://webhook.site/#!/view/bcd50076-6806-4b9d-8d13-21e197c5c496
-      host_batch_size: 0
-
