@@ -141,3 +141,11 @@ controls:
 ###########################################################
 labels:
   - paths: ./labels/*.yml
+
+settings:
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://webhook.site 
+      host_batch_size: 0
+
